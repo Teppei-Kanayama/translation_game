@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI翻訳ゲーム</title>
+</head>
+<body>
+<h1>次の日本語を英訳してください：</h1>
+<h2>{{ target }}</h2>
+
+<form method="post" action="{{ url_for('choose_answer')}}">
+    <p>あなたの回答：<input type="text" name="answer" size="40"></p>
+    <button type="submit">送信</button>
+</form>
+</body>
+</html>
